@@ -31,6 +31,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                    MonProfil()
+                    Info()
                 }
             }
         }
@@ -62,6 +63,17 @@ fun MonProfil(modifier: Modifier = Modifier) {
         )
         Text(text = "Mouhamed DORE")
         Text(text = "Elève ingénieur à ISIS")
+    }
+}
+
+@Composable
+fun Info() {
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = "mouhamed.dore@etud.univ-jfc.fr")
+        Text(text ="www.linkedin.com/in/mouhamed-dore")
     }
 }
 
